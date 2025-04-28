@@ -25,9 +25,7 @@ contract LuLuCoin is ERC20, Ownable {
     string public _symbol = "LLC";
     // 代币符号，供外部调用查询。
 
-    constructor(
-        address initialOwner
-    ) ERC20(_name, _symbol) Ownable(initialOwner) {
+    constructor(address initialOwner) ERC20(_name, _symbol) Ownable(initialOwner) {
         // 构造函数：初始化合约时设置代币的名称、符号，以及指定初始所有者。
     }
 
